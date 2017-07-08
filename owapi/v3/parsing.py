@@ -192,7 +192,7 @@ def bl_parse_stats(parsed, mode="quickplay"):
         if games == 0 or games == ties:
             wr = 0
         else:
-            wr = round((wins / (games - ties)) * 100, 2)
+            wr = round((wins / games) * 100, 2)
 
         built_dict["overall_stats"]["ties"] = ties
         built_dict["overall_stats"]["games"] = games
