@@ -77,7 +77,7 @@ app = Kyoukai("owapi")
 
 @app.route("/")
 async def root(ctx: HTTPRequestContext):
-    raise RequestRedirect("https://github.com/SunDwarf/OWAPI/blob/master/api.md")
+    raise RequestRedirect("https://expo.io/@moyer/watchman")
 
 
 @app.root.errorhandler(500)
